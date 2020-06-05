@@ -12,9 +12,9 @@ landing:
   viewAll: View All
   quickLink: <a href="/get-started">Get Started.</a>
   modules:
-    # - tag: team
-    #   label: Find by team
-    #   style: button
+    - tag: team
+      label: Find by team
+      style: button
     - tag: featured
       label: Useful Docs
       style: docs
@@ -25,10 +25,10 @@ footer:
   helpText: Questions? Email us at propertytothepeople@gmail.com
   defaultEmail: propertytothepeople@gmail.com
   buttons:
-    # edit: Edit This Page
-    # move: Move This Page
-    # create: Create New Page
-    # viewFolder: View Folder
+    edit: Edit This Page
+    move: Move This Page
+    create: Create New Page
+    viewFolder: View Folder
 
 # pages/search, partials/search
 search:
@@ -38,10 +38,10 @@ search:
     kicker: !!js/function (query) => `Showing results for '${query}':`
     label:
       folder: !!js/function (path, folder) => `Filed under <a class="folder" href=${path}><span>${folder}</span></a>`
-      # person: !!js/function (lastUser) => `Last edited by <span class='author'>${lastUser}`
+      person: !!js/function (lastUser) => `Last edited by <span class='author'>${lastUser}`
     none:
       kicker: !!js/function (query) => `There are no results for '${query}'`
-      # suggestion: To request a new page, contact your administrators.
+      suggestion: To request a new page, contact your administrators.
 
 # categories/default
 folder:
