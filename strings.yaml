@@ -8,15 +8,15 @@ branding:
 
 # pages/categories, pages/index, partials/search
 landing:
-  tagline: Help for co-buying property for the commons.
+  tagline: Your how-to guide to co-buying property for the commons.
   viewAll: View All
-  quickLink: <a href="/get-started">Get Started.</a>
+  quickLink: <a href="/get-started">Get started.</a>
   modules:
-    - tag: team
-      label: Find by team
-      style: button
-    - tag: featured
-      label: Useful Docs
+    - tag: case
+      label: Case Studies
+      style: docs
+    - tag: category
+      label: Categories
       style: docs
 
 
@@ -25,10 +25,10 @@ footer:
   helpText: Questions? Email us at propertytothepeople@gmail.com
   defaultEmail: propertytothepeople@gmail.com
   buttons:
-    edit: Edit This Page
-    move: Move This Page
-    create: Create New Page
-    viewFolder: View Folder
+    # edit: Edit This Page
+    # move: Move This Page
+    # create: Create New Page
+    # viewFolder: View Folder
 
 # pages/search, partials/search
 search:
