@@ -10,7 +10,7 @@ branding:
 landing:
   tagline: A radical real-estate guide for purchasing property for the commons.
   viewAll: View All
-  quickLink: <a href="/get-started">Get started.</a>
+  quickLink: <a href="/about-us">Who we are.</a>
   modules:
     - tag: case
       label: Case Studies
@@ -22,7 +22,7 @@ landing:
 
 # partials/footer
 footer:
-  helpText: This site is run by volunteers. Email propertytothe@gmail.com to get involved.
+  helpText: This site is run by volunteers. Email propertytothepeople@gmail.com to get involved.
   defaultEmail: propertytothepeople@gmail.com
   buttons:
     edit: Edit This Page
