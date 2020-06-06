@@ -15,7 +15,6 @@ a {
 }
 
 #masthead {
-    z-index: -1;
     background-color: $color-primary;
     color: $color-lightest;
 
@@ -26,7 +25,13 @@ a {
         }
 
         .branding-label a {
-            color: white;
+            color: $color-lightest;
+        }
+    }
+
+    .breadcrumb {
+        .breadcrumb-item a.content-link {
+             color: $color-lightest;
         }
     }
 
@@ -59,6 +64,16 @@ a {
 
     // Hide bottom "contact us" text
     .main-item--bottom {
-        display: none;
+        position: fixed;
+        height: 60px;
+        width: 100vw;
+        background-color: $color-primary;
+        bottom: 0;
+        left: 0;
+        top: auto;
+
+        p.help-text {
+            color: $color-lightest;
+        }
     }
 }

@@ -22,7 +22,7 @@ landing:
 
 # partials/footer
 footer:
-  helpText: Questions? Email us at propertytothepeople@gmail.com
+  helpText:
   defaultEmail: propertytothepeople@gmail.com
   buttons:
     edit: Edit This Page
