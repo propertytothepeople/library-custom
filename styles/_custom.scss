@@ -1,0 +1,113 @@
+$sidebar-width: 350px;
+$offset-top: 60px;
+
+$color-lightest: #FEFEFE;
+$color-lighter: #FAFAFA;
+$color-light: #DADADA;
+$color-gray: #BABACA;
+$color-dark: #333333;
+$color-darkest: #030303;
+$color-darker: #0D0D0D;
+$color-primary: #E7744E;
+
+a {
+    color: $color-primary;
+}
+
+#masthead {
+    z-index: -1;
+    background-color: $color-primary;
+    color: $color-lightest;
+
+    .branding {
+        .branding-heading a .logo  {
+            filter: invert(100%) brightness(100%);
+        }
+
+        .branding-label a {
+            color: white;
+        }
+    }
+
+    .user-tools {
+        display: none;
+    }
+}
+
+#main-search-page {
+    background-color: $color-lighter;
+    padding-top: $offset-top;
+    position: relative;
+
+    .main-item {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+        > div:not(.featured-cat) {
+            margin-left: $sidebar-width;
+            padding-left: 40px;
+            padding-right: 40px;
+            width: auto;
+        }
+
+        .branding {
+            justify-content: left;
+        }
+
+        .tagline {
+            text-align: left;
+        }
+
+        .featured-cat {
+            position: absolute;
+            left: 0;
+            top: 0;
+            float: left;
+            width: $sidebar-width;
+            height: 100%;
+            background-color: $color-primary;
+            padding-top: $offset-top;
+            margin-top: 0;
+            filter: drop-shadow(3px 1px 3px $color-gray);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            .cat-container.style-docs,
+            .cat-container.style-button {
+                flex: none;
+                margin-top: 0;
+                margin-bottom: 10px;
+                padding-left: 35px;
+                padding-right: 15px;
+
+                h3 {
+                    margin-top: 0;
+                    color: $color-lightest;
+                    font-size: 1.3em;
+                }
+
+                ul > li a {
+                    color: $color-lightest;
+                    font-size: 1.2em;
+                }
+
+                ul > li i.fa {
+                    color: $color-lightest;
+                }
+
+                ul > li a.btn-homepage {
+                    color: $color-darkest;
+                }
+            }
+        }
+    }
+
+    // Hide bottom "contact us" text
+    .main-item--bottom {
+        display: none;
+    }
+}
