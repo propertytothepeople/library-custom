@@ -8,7 +8,7 @@ branding:
 
 # pages/categories, pages/index, partials/search
 landing:
-  tagline: Your how-to guide to co-buying property for the commons.
+  tagline: A radical real-estate guide for purchasing property for the commons.
   viewAll: View All
   quickLink: <a href="/get-started">Get started.</a>
   modules:
@@ -22,7 +22,7 @@ landing:
 
 # partials/footer
 footer:
-  helpText:
+  helpText: This site is run by volunteers. Email propertyforthepeople@gmail.com to get involved.
   defaultEmail: propertytothepeople@gmail.com
   buttons:
     edit: Edit This Page

@@ -1,5 +1,5 @@
 $sidebar-width: 350px;
-$offset-top: 60px;
+$bottom-nav-height: 60px;
 
 $color-lightest: #FEFEFE;
 $color-lighter: #FAFAFA;
@@ -62,10 +62,15 @@ a {
         }
     }
 
-    // Hide bottom "contact us" text
+    // Avoid main item overlapping with bottom nav
+    .main-item:not(.main-item--bottom) {
+        margin-bottom: $bottom-nav-height;
+    }
+
+    // Homepage footer
     .main-item--bottom {
         position: fixed;
-        height: 60px;
+        height: $bottom-nav-height;
         width: 100vw;
         background-color: $color-primary;
         bottom: 0;
@@ -73,7 +78,13 @@ a {
         top: auto;
 
         p.help-text {
-            color: $color-lightest;
+            margin-top: $bottom-nav-height / 3px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: $color-lighter;
+            text-align: center;
         }
     }
 }
