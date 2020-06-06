@@ -24,11 +24,11 @@ landing:
 footer:
   helpText: Questions? Email us at propertytothepeople@gmail.com
   defaultEmail: propertytothepeople@gmail.com
-  buttons:
-    # edit: Edit This Page
-    # move: Move This Page
-    # create: Create New Page
-    # viewFolder: View Folder
+  # buttons:
+  #   edit: Edit This Page
+  #   move: Move This Page
+  #   create: Create New Page
+  #   viewFolder: View Folder
 
 # pages/search, partials/search
 search:
