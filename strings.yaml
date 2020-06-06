@@ -22,7 +22,7 @@ landing:
 
 # partials/footer
 footer:
-  helpText: This site is run by volunteers. Email propertyforthepeople@gmail.com to get involved.
+  helpText: This site is run by volunteers. Email propertytothe@gmail.com to get involved.
   defaultEmail: propertytothepeople@gmail.com
   buttons:
     edit: Edit This Page
