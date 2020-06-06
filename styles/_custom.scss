@@ -46,61 +46,64 @@ a {
         padding: 0;
         margin: 0;
 
-        > div:not(.featured-cat) {
-            margin-left: $sidebar-width;
-            padding-left: 40px;
-            padding-right: 40px;
-            width: auto;
-        }
+        @include desktop {
 
-        .branding {
-            justify-content: left;
-        }
+            > div:not(.featured-cat) {
+                margin-left: $sidebar-width;
+                padding-left: 40px;
+                padding-right: 40px;
+                width: auto;
+            }
 
-        .tagline {
-            text-align: left;
-        }
+            .branding {
+                justify-content: left;
+            }
 
-        .featured-cat {
-            position: absolute;
-            left: 0;
-            top: 0;
-            float: left;
-            width: $sidebar-width;
-            height: 100%;
-            background-color: $color-primary;
-            padding-top: $offset-top;
-            margin-top: 0;
-            filter: drop-shadow(3px 1px 3px $color-gray);
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
+            .tagline {
+                text-align: left;
+            }
 
-            .cat-container.style-docs,
-            .cat-container.style-button {
-                flex: none;
+            .featured-cat {
+                position: absolute;
+                left: 0;
+                top: 0;
+                float: left;
+                width: $sidebar-width;
+                height: 100%;
+                background-color: $color-primary;
+                padding-top: $offset-top;
                 margin-top: 0;
-                margin-bottom: 10px;
-                padding-left: 35px;
-                padding-right: 15px;
+                filter: drop-shadow(3px 1px 3px $color-gray);
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
 
-                h3 {
+                .cat-container.style-docs,
+                .cat-container.style-button {
+                    flex: none;
                     margin-top: 0;
-                    color: $color-lightest;
-                    font-size: 1.3em;
-                }
+                    margin-bottom: 10px;
+                    padding-left: 35px;
+                    padding-right: 15px;
 
-                ul > li a {
-                    color: $color-lightest;
-                    font-size: 1.2em;
-                }
+                    h3 {
+                        margin-top: 0;
+                        color: $color-lightest;
+                        font-size: 1.3em;
+                    }
 
-                ul > li i.fa {
-                    color: $color-lightest;
-                }
+                    ul > li a {
+                        color: $color-lightest;
+                        font-size: 1.2em;
+                    }
 
-                ul > li a.btn-homepage {
-                    color: $color-darkest;
+                    ul > li i.fa {
+                        color: $color-lightest;
+                    }
+
+                    ul > li a.btn-homepage {
+                        color: $color-darkest;
+                    }
                 }
             }
         }
